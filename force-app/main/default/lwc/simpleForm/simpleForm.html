@@ -1,0 +1,14 @@
+<template>
+    <form>
+        <div>
+            <lightning-input label="Name" value={fullName} name="name" type="text" onchange={onHandle}></lightning-input>
+            <lightning-input label="Phone Number" value={phoneNumber} name="phone" type="text" onchange={onHandle}></lightning-input>
+            <lightning-button label="submit" onclick={onSubmit}></lightning-button>
+        </div>
+    </form>
+
+    <div>
+        <lightning-output-field value={retName}></lightning-output-field>
+        <lightning-output-field value={retPhone}></lightning-output-field>
+    </div>
+</template>
